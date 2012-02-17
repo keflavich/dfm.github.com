@@ -37,8 +37,13 @@ First, it checks whether or not you're in screen then it sets your command promp
 var comments = [
 /* begin template --- copy these lines then use any valid html in your comment */
 {'github_user': 'template', 'date': new Date(2011,8,3), 'comment': "\
-This is an example comment.<br />\
-Don't forget to escape your newlines!\
+my screenrc looks different but does a similar thing:
+defscrollback 5000 \
+vbell off \
+startup_message off \
+hardstatus alwayslastline\
+hardstatus string '%{= kG}[%{G}%H%{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%d/%m %{G}%C%A]'\
+termcapinfo xterm|xterms|xs|rxvt ti@:te@\
 "},
 /* end template */
 {'github_user': 'dfm-test', 'date': new Date(2011,8,3), 'comment': "\
